@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Formularo</title>
+</head>
+<body>
+<h1 class="text">formulario </h1>
+<div class="caja">
+    <form action="">
+        <input class="cajatexto" type="text" name="nombre " id="nombre" placeholder="nombre"><hr>
+        <input class="cajaapellido"    type="text" name="apellido" id="apellido" placeholder="apellido"><hr>
+        <label class="cajafecha"   for="fecha">fecha de nacimiento</label><input type="date" name="fecha " id="fecha">
+        <button class="enviar"    onclick="recuperar();">enviar</button>
+    </form>
+</div>   
+<script>
+    function recuperar(){
+        var nom = document.getElementById("nombre").value;
+        var ape = document.getElementById("apellido").value;
+        var fec = document.getElementById("fecha").value;
+        alert ("hola wuenas noches:"+ nom +" "+ ape +""+ fec +"");
+    }
+</script>
+</body>
